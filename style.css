@@ -28,6 +28,28 @@ main h2 {
   margin-bottom: 3rem;
 }
 
+.or span {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: rgb(204, 204, 204);
+}
+
+.or span::before,
+.or span::after {
+  position: absolute;
+  content: " ";
+  bottom: 50%;
+  right: 50%;
+  height: 0.1rem;
+  width: 5rem;
+  background: rgb(204, 204, 204);
+  margin: 0 1rem;
+}
+.or span::after {
+  left: 50%;
+}
+
 main .social-midia a {
   text-decoration: none;
 }
